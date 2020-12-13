@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Week2 from "./Components/Week2";
+
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello There
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        This is my crazyy application
-        </a>
-      </header>
+      
+      <Week2 />
+      
     </div>
+    <Switch>
+          <Route path="/week-2">
+            <Week2 />
+          </Route>
+        </Switch>
+    </Router>
   );
 }
 
