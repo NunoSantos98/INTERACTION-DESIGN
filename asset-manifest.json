@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/NTERACTION-DESIGN/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/NTERACTION-DESIGN/static/js/main.d1d52b05.chunk.js",
+    "main.js.map": "/NTERACTION-DESIGN/static/js/main.d1d52b05.chunk.js.map",
+    "runtime-main.js": "/NTERACTION-DESIGN/static/js/runtime-main.58088762.js",
+    "runtime-main.js.map": "/NTERACTION-DESIGN/static/js/runtime-main.58088762.js.map",
+    "static/js/2.2037abf2.chunk.js": "/NTERACTION-DESIGN/static/js/2.2037abf2.chunk.js",
+    "static/js/2.2037abf2.chunk.js.map": "/NTERACTION-DESIGN/static/js/2.2037abf2.chunk.js.map",
+    "static/js/3.567b210d.chunk.js": "/NTERACTION-DESIGN/static/js/3.567b210d.chunk.js",
+    "static/js/3.567b210d.chunk.js.map": "/NTERACTION-DESIGN/static/js/3.567b210d.chunk.js.map",
+    "index.html": "/NTERACTION-DESIGN/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/NTERACTION-DESIGN/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.2037abf2.chunk.js.LICENSE.txt": "/NTERACTION-DESIGN/static/js/2.2037abf2.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/NTERACTION-DESIGN/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.58088762.js",
+    "static/js/2.2037abf2.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.d1d52b05.chunk.js"
+  ]
+}
