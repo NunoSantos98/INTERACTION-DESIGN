@@ -19,7 +19,7 @@ const Alert = () => {
     <>
       {visible && (
         <StyledDiv>
-          <p>this is an example of the Week2</p>
+          <p>this is an example of the Week1</p>
           <span onClick={handleClick}>x</span>
         </StyledDiv>
       )}
@@ -27,12 +27,12 @@ const Alert = () => {
   );
 };
 
-const Week2 = () => {
-  const name = "Joe";
+const Week1 = () => {
+  const name = "Nuno";
 
-  const location = () => "Brighton";
+  const location = () => "London";
 
   return <Alert />;
 };
 
-export default Week2;
+export default Week1;
