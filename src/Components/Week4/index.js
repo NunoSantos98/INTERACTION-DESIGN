@@ -41,8 +41,8 @@ const StyledInput = styled.input`
 background: #ffffff;
 margin-Left:16px;
 border: 1px solid #c7c7c7;
-height:63px;
-width:337px;
+height:58px;
+width:328px;
 top:16px;
 font-size:16px;
 font:Roboto;
@@ -60,16 +60,19 @@ color:red;
 `;
 
 const StyledButton=styled.button`
-height:63px;
-width:350px;
-background: #1e57f1;
+height:36px;
+width:328px;
+background: #55758C;
+margin-left:16px;
+margin-top: 16px;
 color:#ffffff;
 text-align: center;
 font-size:18px;
 border:0;
+border-radius:2px;
 cursor: pointer;
 &:hover{
-    background:red;
+    background:#3D5262;
 }
 `;
 
@@ -86,9 +89,10 @@ const Week4 = () => {
         
         <img src={TopNavigation} />
 
-        <img src={Icon} style={{width:135,height:135,justifyContent:"center",marginTop:48,marginLeft:'auto',marginRight:'auto',display:'block'}}/>
-        <p style={{top:36}}/>
-
+        <p style={{top:16,textAlign:"right",color:"#7AAFD7",font:"Roboto",fontSize:20,marginRight:16}}>Join Now</p>
+        <img src={Icon} style={{width:135,height:135,justifyContent:"center",marginTop:11,marginLeft:'auto',marginRight:'auto',display:'block'}}/>
+        <p style={{top:47}}/>
+        <form>
         <StyledInput  type="text" name="email" placeholder="Email"/>
         
         <p style={{top:16}}/>
@@ -97,12 +101,14 @@ const Week4 = () => {
         
         <p style={{top:16}}/>
 
-    <StyledIcon src={Unchecked} style={{marginLeft:16}}/>
-    
-    <p style={{top:16,marginLeft:16}}> Forgot Password? </p>
+    <StyledIcon src={Unchecked} style={{marginLeft:16,verticalAlign:"middle"}}/> <span>Remember me?</span>
 
+    <p style={{top:16,marginLeft:16,color:"#7AAFD7"}}> Forgot Password? </p>
 
+        <StyledButton>Login</StyledButton>
 
+    <p style={{marginLeft:16}}>No account?<span style={{color:"#7AAFD7"}}> Sign Up</span></p>   
+    </form>
         </StyledWrapper>
     );
 
