@@ -4,8 +4,8 @@ import "./App.css";
 import Week1 from "./Components/Week1";
 import Week2 from "./Components/Week2";
 import Week3 from "./Components/Week3";
-/*
 import Week4 from "./Components/Week4";
+/*
 import Week5 from "./Components/Week5";
 import Week6 from "./Components/Week6";
 import Week7 from "./Components/Week7";
@@ -46,6 +46,9 @@ const Home = () => (
       <li>
         <Link to="/week3"> Week 3</Link>
       </li>
+      <li>
+        <Link to="/week4"> Week 4</Link>
+      </li>
     </StyledNav>
   </nav>
 );
@@ -62,6 +65,9 @@ function App() {
        </Route>
        <Route path="/Week3">
           <Week3 />
+       </Route>
+       <Route path="/Week4">
+          <Week4 />
        </Route>
        <Route path="/">
           <Home />
