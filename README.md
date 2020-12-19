@@ -18,6 +18,10 @@ https://www.npmjs.com/package/react-hover-button
 https://webdevtrick.com/css-expand-button-on-hover/
 
 
+---WEEK 6---
+
+https://www.pluralsight.com/guides/how-to-get-selected-value-from-a-mapped-select-input-in-react
+
 
 
 
