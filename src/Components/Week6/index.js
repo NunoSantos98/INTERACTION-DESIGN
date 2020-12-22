@@ -2,21 +2,34 @@ import React, {useState} from "react";
 import styled, {keyframes} from "styled-components";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import {useForm} from "react-hook-form";
-import TopNavigation from "../../Assets/Topnav.png";
-import loadingGIF from "../../Assets/loading.gif";
+import side from "../../Assets/sideimage.png"
 import Icon from "../../Assets/DeathStar.png";
 
 import {Button} from "../Week3";
 import {buildQueries} from "@testing-library/react";
 
+const SideImage =styled.img`
+width:50%;
+margin:0 auto;
+display: block;
+
+`;
 
 const StyledWrapper = styled.div `
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+`;
+
+const Styledblocks =styled.div `
+
+width: 50%;
+font-size: 30px;
+object-fit: cover;
+margin-left: 1rem;
+margin-top: 1rem;
+
 `;
 
 const StyledButton = styled.button `
@@ -38,7 +51,7 @@ const StyledButton = styled.button `
   }
 `;
 const StyledItems = styled.h4 `
-margin-left:4px
+margin-left:1rem;
 
 
 `;
@@ -111,20 +124,36 @@ const StyledMenu = styled.div `
 
 const options = [
     {
-        label: "Apple",
-        image: {
-            Icon
-        },
-        value: "apple"
+        label: "1",
+        value: "1"
     }, {
-        label: "Mango",
-        value: "mango"
+        label: "2",
+        value: "2"
     }, {
-        label: "Banana",
-        value: "banana"
+        label: "3",
+        value: "3"
     }, {
-        label: "Pineapple",
-        value: "pineapple"
+        label: "4",
+        value: "4"
+    },
+    {
+        label: "5",
+        value: "5"
+    },
+    {
+        label: "6",
+        value: "6"
+    },
+    {
+        label: "7",
+        value: "7"
+    },
+    {
+        label: "8",
+        value: "8"
+    },{
+        label: "9",
+        value: "9"
     },
 ];
 
@@ -133,7 +162,7 @@ class Week6 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            fruit: "Please Select"
+            fruit: "0"
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -147,14 +176,14 @@ class Week6 extends React.Component {
     render() {
         return (
             <StyledWrapper>
+                <Styledblocks>
+                <StyledItems >x{this.state.fruit}</StyledItems>
+
                 <form>
-                    <h4>First Name:</h4>
                     <StyledInput type="text" name="firstname" placeholder="First Name"/>
-                    <h4>Last Name:</h4>
                     <StyledInput type="text" name="lastname" placeholder="Last Name"/>
                     <p/>
                     <StyledInput type="text" name="email" placeholder="Email"/>
-
 
                 </form>
                 <StyledSelect value={
@@ -177,12 +206,8 @@ class Week6 extends React.Component {
                     ))
                 } </StyledSelect>
 
-                <h1 style={
-                    {marginTop: "21rem"}
-                }>
-                    {
-                    this.state.fruit
-                }</h1>
+                
+                </Styledblocks>
 
             </StyledWrapper>
 

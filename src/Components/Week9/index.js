@@ -6,23 +6,9 @@ import night from "../../Assets/night.jpg";
 
 const time = '0.25s';
 
-
-
 const setAnimation = (from, to) => keyframes({ from: from, to: to })
 
 
-class Car extends React.Component {
-    constructor(props) {
-       super(props);
-
-       this.state = {
-        brand: "Ford",
-        model: "Mustang",
-        color: "red",
-        year: 1964
-      };
-}
-}
 
 const StyledWrapper = styled.div`
 animation: ${time} ${({ showBackground }) => (showBackground && setAnimation({backgroundImage: 'url('+day+')',backgroundSize:"Cover",height: "100vh",transition: "0.2s all ease-out", color: '#000'}, {backgroundImage: 'url('+night+')',backgroundSize:"Cover",height: "100vh",transition: "0.2s all ease-out", color: '#000   '})) || (!showBackground && setAnimation({backgroundImage: 'url('+night+')',backgroundSize:"Cover",height: "100vh",transition: "0.2s all ease-out"}, {backgroundImage: 'url('+day+')',backgroundSize:"Cover",height: "100vh"}))} linear;

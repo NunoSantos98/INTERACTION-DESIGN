@@ -101,7 +101,8 @@ const Week4 = () => {
         
         <p style={{top:16}}/>
 
-    <StyledIcon src={Unchecked} style={{marginLeft:16,verticalAlign:"middle"}}/> <span>Remember me?</span>
+    <StyledIcon src={Unchecked} style={{marginLeft:16,
+    }}/> <span>Remember me?</span>
 
     <p style={{top:16,marginLeft:16,color:"#7AAFD7"}}> Forgot Password? </p>
 
