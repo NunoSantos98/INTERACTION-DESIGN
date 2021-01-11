@@ -100,7 +100,7 @@ const Week9 = () => {
     
     
     <StyledWrapper showBackground={showBackground}>
-        <a href="/interaction-design/" style={{textDecoration:"none",color:"black"}}>
+        <a href="/INTERACTION-DESIGN/" style={{textDecoration:"none",color:"black"}}>
                 <img src={BackMenu} className="go-back" alt="go back" style={{width:"2%",margin:"1%"}}/>
             </a>
         <Toggle onNotActive={handleNotActive} onActive={handleActive} />

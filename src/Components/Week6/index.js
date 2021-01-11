@@ -108,7 +108,7 @@ class Week6 extends React.Component {
   render() {
     return (
       <div>
-      <a href="/interaction-design/" style={{textDecoration:"none",color:"black"}}>
+      <a href="/INTERACTION-DESIGN/" style={{textDecoration:"none",color:"black"}}>
                 <img src={BackMenu} className="go-back" alt="go back" style={{width:"2%",margin:"1%"}}/>
             </a>
       <StyledWrapper>
