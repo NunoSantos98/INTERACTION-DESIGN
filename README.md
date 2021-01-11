@@ -55,7 +55,12 @@ The buttons were developed following Material design Guidelines.
 Google maintains material Design and keeps extensive documentation explaining how to use and implement it. 
 This kind of support and documentation can be a problem solve form many modern design systems.
 
-The first Button Design uses the Contained buttons guidelines, a type that offers a high emphasis, distinguished by elevation and fill. The Second Button Design was developed using Outlined buttons Guidelines that give a medium-emphasis. The Third Button Design was created using Icon buttons Guidelines. They are commonly found in app bars and toolbars.
+The first Button Design uses the Contained buttons guidelines, a type that offers a high emphasis, distinguished by elevation and fill.
+
+The second button is based on the Outlined button (known sometimes as "Ghost button") are a step up in difficulty and focus from a text button. Normally this kind of buttons is used as an action button not primary. 
+To the good use, it is suggest using a fill when hover to give the feeling of selection to the user.
+
+The Third Button Design was created using Icon buttons Guidelines. They are commonly found in app bars and toolbars.
 
 ---
 ---
@@ -263,7 +268,7 @@ A dropdown menu is a design pattern that helps to view a list of content, naviga
 
 The idea of monthly pass comes with one of the options to illustrate different ways to use menus.
 
-Angie li states that "Dropdowns clearly have their place in effective web design"(https://www.nngroup.com/articles/drop-down-menus/) so the proper use of them will allow for a good User Experience.
+(Li A, 2017) states that "Dropdowns clearly have their place in effective web design" so the proper use of them will allow for a good User Experience.
 
 The Star Wars theme was a personal choice for Design's development. This theme will appear on other Components.
 
@@ -485,7 +490,7 @@ The drop-down menu was a brilliant breakthrough in architecture. It improved the
 ---
 - ## 3.1 Research
 ---
- Hayley Sacket(https://www.clicky.co.uk/blog/the-importance-of-form-design/) states that "26% of people abandoned their purchase during checkout due to a long or complex process".
+ (Hayley Sacket,2019) states that "26% of people abandoned their purchase during checkout due to a long or complex process".
 
 The form design is important because they will impact the overall user if it's not clear and gets the user frustrated, so there is a high risk of leaving the site. This form is designed to be more simple that can be giving a positive experience to the customer and arranges the content in one column make it easier for the user to fill in as we naturally read top to bottom.
 
@@ -1228,6 +1233,12 @@ Toggles is a strong UI part that rarely fails to offer a pleasant experience. It
 Defining a style template following this method has helped me think better about my projects. It helped me to make educated and deliberate decisions.
 
 ---
+---
+# References
+
+LI, A., Dropdowns: Design Guidelines [viewed Jan 2, 2021]. Available from: https://www.nngroup.com/articles/drop-down-menus/
+
+SACKETT, H., 2019. The importance of user-friendly form design. In: Clicky Media™. -06-05T08:30:47+00:00 [viewed Jan 11, 2021]. Available from: https://www.clicky.co.uk/blog/the-importance-of-form-design/
 
 
 
