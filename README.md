@@ -1,10 +1,10 @@
 # Interaction Design
 
-#### Hosted site: https://NunoSantos98.github.io/INTERACTION-DESIGN
+### Hosted site: https://NunoSantos98.github.io/INTERACTION-DESIGN
 
 #
 
-## Introduction
+# Introduction
 
 ---
 
@@ -13,14 +13,15 @@ This repository includes nine components offering design solutions to real-world
  All nine components can be access clicking on the link at the top.
 
  ---
-
-## 1. Buttons
-
+---
+# 1. Buttons
+---
 ![Button](src/Readme_img/buttons_web.png)
 
 ---
-### Research
-
+---
+- ## 1.1 Research
+---
 Buttons encourage users to take action and make decisions with a single press. Buttons communicate the steps users can perform. They are usually located in the UI of your website, which should be easily searchable and recognizable, thus explicitly showing the activity that helps the user to complete.
 
 “You press the button, we do the rest,” — Kodak cameras appealed to potential consumers, through a catchy and direct tagline.
@@ -31,8 +32,12 @@ The most popular are rectangular buttons with rounded corners, which are readily
 
 
 ---
-### Evaluation of guidelines
-#### Colors
+--- 
+- ## 1.2 Evaluation of guidelines
+---
+![Button](src/Readme_img/button_figma.png)
+
+### Colors
 The colour palette chosen to these buttons is base on Bootstrap Colors.
 
 - ![#337AB7](https://via.placeholder.com/15/337AB7/000000?text=+) `#337AB7`
@@ -41,7 +46,9 @@ The colour palette chosen to these buttons is base on Bootstrap Colors.
 
 - ![#5BC0DE](https://via.placeholder.com/15/5BC0DE/000000?text=+) `#5BC0DE`
 
-#### Button Guidelines
+
+### Button Guidelines
+
 
 The buttons were developed following Material design Guidelines.
 
@@ -51,29 +58,31 @@ This kind of support and documentation can be a problem solve form many modern d
 The first Button Design uses the Contained buttons guidelines, a type that offers a high emphasis, distinguished by elevation and fill. The Second Button Design was developed using Outlined buttons Guidelines that give a medium-emphasis. The Third Button Design was created using Icon buttons Guidelines. They are commonly found in app bars and toolbars.
 
 ---
-### Planning & design prototyping
-
+---
+- ## 1.3 Planning & design prototyping
+---
 To store all current buttons, it was created three variants, allowing to create multiple buttons with different colours just using the original.
 
+ The Container button has the particularly that when the cursor is Hover, it will expand.
 
 ![Button_container](src/Readme_img/button_container.png)
 
- The Container button has the particularly that when the cursor is Hover, it will expand. 
-
- ![Button_rounded](src/Readme_img/button_rounded.png)
- 
  The Outlined button changes the background colour when it is hovered.
- 
- ![Button_confirm](src/Readme_img/button_confirm.png)
 
+  ![Button_rounded](src/Readme_img/button_rounded.png)
+ 
  The Icon button doesn't have interaction.
 
-### You can access the Button Figma file  [HERE](https://www.figma.com/file/liWJrdA84HTJsg2bLtxf1G/COM525-WEEK3?node-id=4%3A0)
+ ![Button_confirm](src/Readme_img/button_confirm.png)
+
+
+## You can access the Button Figma file  [HERE](https://www.figma.com/file/liWJrdA84HTJsg2bLtxf1G/COM525-WEEK3?node-id=4%3A0)
 
 
 ---
-### Coding
-
+---
+- ## 1.4 Coding
+---
 ```import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -228,24 +237,28 @@ export default Week3;
 
 
 ---
-### ScreenCast
-
+---
+- ## 1.5 ScreenCast
+---
  ![button_video](src/Readme_img/Button.gif)
 
 ---
-
-### reflection
-
+---
+- ## 1.6 reflection
+---
 The button is intended to guide users to take the action you want them to take. This component allowed knowing several styles, pros and cons, and the best circumstance to be implemented. The UX button style is always about identification and transparency. Think about the web or software as a chat that began with a busy person. The button plays a vital role in this discussion.
 
 ---
- ## 2. Menus
+---
 
+# 2. Menus
+---
 ![Menu](src/Readme_img/dropdown_web.png)
 
 ---
-### Research
-
+---
+- ## 2.1 Research
+---
 A dropdown menu is a design pattern that helps to view a list of content, navigation points, and functions without simultaneously overwhelming the user with several choices. When users press the menu label, they find a list of favourites and choose one of these options by clicking on the right content tag.
 
 The idea of monthly pass comes with one of the options to illustrate different ways to use menus.
@@ -255,9 +268,12 @@ Angie li states that "Dropdowns clearly have their place in effective web design
 The Star Wars theme was a personal choice for Design's development. This theme will appear on other Components.
 
 ---
-### Evaluation of guidelines
+---
+- ## 2.2 Evaluation of guidelines
+---
 
-![menu_example](src/Readme_img/dropdown_leftright.jpg)
+![Button](src/Readme_img/dropdown_figma.png)
+
 
 This component adopted the concept of aligning content to the middle following the [Left and Right Horizontal Alignment](https://uxengineer.com/principles-of-design/alignment/), the easiest way to ensure this to happen is to establish a max-width for all the content in the beginning. The invisible box will ensure that the elements are aligned.
 
@@ -273,18 +289,19 @@ the color palette used on this component:
 
 
 ---
-### Planning & design prototyping
+- ## 2.3 Planning & design prototyping
 
 Creating a layout and dividing them into two sections, one for the image and the other for the content, according to the principles refer int the section above, and place the elements in the middle.
 
-### You can access the Menu Figma file  [HERE](https://www.figma.com/file/GwDlns968VCYsbsj868qAw/COM525-WEEK6)
+## You can access the Menu Figma file  [HERE](https://www.figma.com/file/GwDlns968VCYsbsj868qAw/COM525-WEEK6)
 
 
 
 
 ---
-### Coding
-
+---
+- ## 2.4 Coding
+---
 ```
 import React from "react";
 import ReactTimeout from 'react-timeout';
@@ -446,25 +463,28 @@ export default Week6;
 
 
 ---
-
-### ScreenCast
-
+---
+- ## 2.5 ScreenCast
+---
  ![Menu_video](src/Readme_img/Menu.gif)
 
 
 ---
-### Reflection
-
+---
+- ## 2.6 Reflection
+---
 The drop-down menu was a brilliant breakthrough in architecture. It improved the way people navigated through web sites, making it much faster. This component allowed knowing several styles, pros and cons, and the best circumstance to be implemented. And having the opportunity to study a few design principles of organising the content and their influence at the user's eyes.
 
 ---   
-## 3. Forms 
-
+---
+# 3. Forms 
+---
 ![Form](src/Readme_img/form_web.png)
 
 ---
-### Research
-
+---
+- ## 3.1 Research
+---
  Hayley Sacket(https://www.clicky.co.uk/blog/the-importance-of-form-design/) states that "26% of people abandoned their purchase during checkout due to a long or complex process".
 
 The form design is important because they will impact the overall user if it's not clear and gets the user frustrated, so there is a high risk of leaving the site. This form is designed to be more simple that can be giving a positive experience to the customer and arranges the content in one column make it easier for the user to fill in as we naturally read top to bottom.
@@ -476,7 +496,10 @@ When the user clicks on the Register Form, it will show a message that follows t
 
 
 ---
-### Evaluation of guidelines
+---
+- ## 3.2 Evaluation of guidelines
+---
+![Button](src/Readme_img/form_figma.png)
 
 The form fields was created following the Material Design Principles giving a clear and a efficient layout.
 
@@ -488,8 +511,9 @@ The Darth Vader image used on the component is inspired by Lord Kitchener "your 
  It looks that Darth Vader is giving an idea of recruitment. 
 
 ---
-### Planning & design prototyping
-
+---
+- ## 3.3 Planning & design prototyping
+---
 Planning the layout and how the input fields should be displayed and the information on the next page when the user clicks on the register button.
 
 The colour Pallete used on this component:
@@ -498,11 +522,12 @@ The colour Pallete used on this component:
 
 - ![#A32121](https://via.placeholder.com/15/A32121/000000?text=+) `#A32121` (Button Active)
 
-### You can access the Form Figma file  [HERE](https://www.figma.com/file/EHO19E6ty8wzK1uFtMUu8q/COM525-WEEK7)
+## You can access the Form Figma file  [HERE](https://www.figma.com/file/EHO19E6ty8wzK1uFtMUu8q/COM525-WEEK7)
 
 ---
-### Coding
-
+---
+- ## 3.4 Coding
+---
 ```
 import React, { useState,Component } from "react";
 import styled from "styled-components";
@@ -691,24 +716,28 @@ export default Week7;
 ```
 
 ---
-### ScreenCast
-
+---
+- ## 3.5 ScreenCast
+---
  ![Menu_video](src/Readme_img/Form.gif)
 
 
 ---
-### Reflection
-
+---
+- ## 3.6 Reflection
+---
 While many Designer thinks that Forms might be tedious, or they might be neglected or ignored. I believe that it does come with ample margin for creativity and innovation. Forms may be the most critical aspect of a company website. This component allowed knowing the pros and cons, and the best circumstance to be implemented. 
 
 ---
-## 4.Modal
-
+---
+# 4.Modal
+---
 ![Modal](src/Readme_img/Modal_web.jpeg)
 
 ---
-### Research
-
+---
+- ## 4.1 Research
+---
 Modals are an effective feature of the user experience when the plan and use them correctly. They will help consumers achieve their goals more effectively and easily. But dialogues, when they are done incorrectly, will frustrate them. Knowing how to code dialogues would make it easier to use them in a manner that does not upset the customers.
 
 For this component it was used a modal window, this modal appears when the user clicks on the "Continue reading" button, suggesting if the user wants to read the full article he will need to put his email.
@@ -717,7 +746,11 @@ A modal window is an element that appears in front of the main page it creates a
 
 
 ---
-### Evaluation of guidelines
+---
+- ## 4.2 Evaluation of guidelines
+---
+
+![Button](src/Readme_img/modal_figma.png)
 
 The modal follows the [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal) guidelines trying to be as simples as can be. After clicking on the button to interrupt the user’s current task, the modal will appear to catch his full attention to something more important and ask for information if the user wants to continue reading the article. 
 
@@ -731,19 +764,21 @@ The color pallete used on this component:
 
 
 ---
-### Planning & design prototyping
-
+---
+- ## 4.3 Planning & design prototyping
+---
 During the Planning, I have founded that the modal would prompt a message to the user that if he wants to continue, he needs to insert his email using black transparency to focus on the modal. Its possibility of exit the modal without entering the email is possible, but he content will be limited.
 
 The function of showing the rest of the article is not implemented yet, but it will in a future version.
 
-### You can access the Modal Figma file  [HERE](https://www.figma.com/file/XyOQKHAXG7YxfcYiGcXkjn/COM525-WEEK8)
+## You can access the Modal Figma file  [HERE](https://www.figma.com/file/XyOQKHAXG7YxfcYiGcXkjn/COM525-WEEK8)
 
 
 
 
 ---
-### Coding
+---
+- ## 4.4 Coding
 ```
 import React, {useState} from "react";
 import styled, {keyframes} from "styled-components";
@@ -990,25 +1025,30 @@ export default Week8;
 ```
 
 ---
-### ScreenCast
+---
+- ## 4.5 ScreenCast
 ![Modal](src/Readme_img/modal.gif)
+---
 
 ---
-### Reflection
-
+---
+- ## 4.6 Reflection
+---
 When used correctly, modals can allow users to perform actions without losing context or changing pages quickly. The programmer needs to be always alert of how the modal is implemented, and make sure that is not poorly done because this action can create confusion for the user and make him exit the page.
 
 Getting the user’s attention is always essential, and the programmer can achieve this by keeping the context and simplifying the UI are tremendous benefits of modals.
 
 
 ---
-## 5. Toggle Switch
-
+---
+# 5. Toggle Switch
+---
 ![Switch](src/Readme_img/switch_web.png)
 
 ---
-### Research
-
+---
+- ## 5.1 Research
+---
 A UI control with two mutually exclusive states, such as ON and OFF, is a Toggle switch. This control's architecture and operation are based on a physical switch that allows users to ON or OFF items (i.e. light switch). Although there have been toggle switches in user interfaces for a while, many programmers still abuse them.
 
 In this component, the toggle switch's function will be switching between day mode and night mode and changing the wallpaper.
@@ -1016,9 +1056,11 @@ In this component, the toggle switch's function will be switching between day mo
 It is a big win for customer experience to provide the users with a way to adapt the app to their liking. Providing the user with a quick toggle switch between dark and light modes here.
 
 
-
 ---
-### Evaluation of guidelines
+---
+- ## 5.2 Evaluation of guidelines
+---
+![Button](src/Readme_img/switch_figma.png)
 
 This component was initially designed for IOS, but it was adapted to the desktop version.
 
@@ -1029,7 +1071,9 @@ Colour is an important visual symbol for toggles, and there are two things to be
 When the Toggle Switch is active, it shows a smooth transition following with the image transition.
 
 ---
-### Planning & design prototyping
+---
+- ## 5.3 Planning & design prototyping
+---
 
 The Design started with the development of the toggle switch
 
@@ -1045,11 +1089,13 @@ After creating the toggle switch it was created the dynamic background This back
 
 
 
-### You can access the Switch Figma file  [HERE](https://www.figma.com/file/H9he6E1xrF1prl17XHnQtd/COM525-WEEK9?node-id=0%3A1)
+## You can access the Switch Figma file  [HERE](https://www.figma.com/file/H9he6E1xrF1prl17XHnQtd/COM525-WEEK9?node-id=0%3A1)
 
 
 ---
-### Coding
+---
+- ## 5.4 Coding
+---
 
 ```
 import React, { useState, useEffect } from 'react';
@@ -1168,11 +1214,15 @@ export default Week9;
 
 ```
 ---
-### ScreenCast
+- ## 5.5 ScreenCast
+---
 ![Switch](src/Readme_img/Switch.gif)
 
 ---
-### Reflection
+---
+- ## 5.6 Reflection
+---
+
 Toggles is a strong UI part that rarely fails to offer a pleasant experience. It's simple and intuitive to all, and it succeeds in an important end in allowing the user the power of freedom to configure the system. It is necessary to have the right control in the right place to make it more user-friendly.
 
 Defining a style template following this method has helped me think better about my projects. It helped me to make educated and deliberate decisions.
