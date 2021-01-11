@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styled, {keyframes} from "styled-components";
 import coverIMG from "../../Assets/death.jpg";
 import close from "../../Assets/close.svg";
+import BackMenu from "../../Assets/home.svg";
 
 
 const StyledModalWrapper = styled.div `
@@ -28,7 +29,7 @@ const StyledModal = styled.div `
 const StyledTitle = styled.h1 `
 
 text-align:center;
-margin-top:4rem;
+margin-top:1rem;
 margin-bottom:4rem;
 font-family: -webkit-pictograph;
 font-size:51px;
@@ -139,6 +140,10 @@ const Modal = (props) => { // show={showModal} onClose={handleClose}
     }
 
     return (
+        <div>
+      <a href="/interaction-design/" style={{textDecoration:"none",color:"black"}}>
+                <img src={BackMenu} className="go-back" alt="go back" style={{width:"2%",margin:"1%"}}/>
+            </a>
         <> {
             show && (
                 <StyledModalWrapper onClick={onClose}>
@@ -158,6 +163,7 @@ const Modal = (props) => { // show={showModal} onClose={handleClose}
                 </StyledModalWrapper>
             )
         } </>
+        </div>
     )
 }
 const Week8 = () => {
@@ -167,6 +173,7 @@ const Week8 = () => {
     const handleClick = () => setShowModal(true);
 
     return <>
+    
         <Modal show={showModal}
             onClose={handleClose}>
 
@@ -206,16 +213,16 @@ const Week8 = () => {
         <StyledContent>
             <p>
                 In January, the White House responded to a not-entirely-serious petition to build a Death Star,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                a huge moon-sized battle station armed with planet-destroying laser cannons depicted in the original Star Wars trilogy. 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                More than 34,000 people had signed the petition, claiming that the project would spur job creation and strengthen defense.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                They wanted the government to begin construction by 2016. The Obama administration jokingly responded that the cost 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                — estimated to be $850 quadrillion — was far too high, and that the Obama administration "does not support blowing up planets."
+ a huge moon-sized battle station armed with planet-destroying laser cannons depicted in the original Star Wars trilogy. 
+ More than 34,000 people had signed the petition, claiming that the project would spur job creation and strengthen defense.
+ They wanted the government to begin construction by 2016. The Obama administration jokingly responded that the cost 
+ — estimated to be $850 quadrillion — was far too high, and that the Obama administration "does not support blowing up planets."
             </p>
             <StyledFadeOut>
 
                 <p>
                     The origin of the idea appears to be a rather amusing satirical post by the Glenn Beck-endorsed finance blog Zero Hedge from January 2012.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Zero Hedge calculated that at current steel prices, the steel alone would cost $852 quadrillion, or 13,000 times the current level of global
+             Zero Hedge calculated that at current steel prices, the steel alone would cost $852 quadrillion, or 13,000 times the current level of global
                 </p>
             </StyledFadeOut>
 

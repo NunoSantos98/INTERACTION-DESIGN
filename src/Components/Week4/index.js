@@ -21,11 +21,9 @@ width: 360px;
 const TopNav =styled.div`
 width: 360px;
 height: 80px;
-
 `;
 
 const styles = styled.image`
-
 width: 135px;
 height: 135px;
 `;
@@ -34,7 +32,6 @@ height: 135px;
 const StyledHeader =styled.h1`
 color: #1e57f1;
 margin-left:2rem;
-
 `;
 
 const StyledInput = styled.input`
