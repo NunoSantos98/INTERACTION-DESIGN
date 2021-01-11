@@ -1,6 +1,6 @@
 {
   "name": "interaction-design",
-  "homepage": "http://NunoSantos98.github.io/NTERACTION-DESIGN",
+  "homepage": "http://NunoSantos98.github.io/INTERACTION-DESIGN",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -63,6 +63,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "3.1.0"
+    "gh-pages": "^3.1.0"
   }
 }
