@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/INTERACTION-DESIGN/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/INTERACTION-DESIGN/static/js/main.452b1f3d.chunk.js",
-    "main.js.map": "/INTERACTION-DESIGN/static/js/main.452b1f3d.chunk.js.map",
+    "main.js": "/INTERACTION-DESIGN/static/js/main.af5209c7.chunk.js",
+    "main.js.map": "/INTERACTION-DESIGN/static/js/main.af5209c7.chunk.js.map",
     "runtime-main.js": "/INTERACTION-DESIGN/static/js/runtime-main.95b632d2.js",
     "runtime-main.js.map": "/INTERACTION-DESIGN/static/js/runtime-main.95b632d2.js.map",
     "static/css/2.9c6b934b.chunk.css": "/INTERACTION-DESIGN/static/css/2.9c6b934b.chunk.css",
@@ -34,6 +34,6 @@
     "static/css/2.9c6b934b.chunk.css",
     "static/js/2.54d2cfa4.chunk.js",
     "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.452b1f3d.chunk.js"
+    "static/js/main.af5209c7.chunk.js"
   ]
 }
