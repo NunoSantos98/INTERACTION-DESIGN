@@ -21,11 +21,9 @@ width: 360px;
 const TopNav =styled.div`
 width: 360px;
 height: 80px;
-
 `;
 
 const styles = styled.image`
-
 width: 135px;
 height: 135px;
 `;
@@ -34,7 +32,6 @@ height: 135px;
 const StyledHeader =styled.h1`
 color: #1e57f1;
 margin-left:2rem;
-
 `;
 
 const StyledInput = styled.input`
@@ -101,8 +98,7 @@ const Week4 = () => {
         
         <p style={{top:16}}/>
 
-    <StyledIcon src={Unchecked} style={{marginLeft:16,
-    }}/> <span>Remember me?</span>
+    <StyledIcon src={Unchecked} style={{marginLeft:16,verticalAlign:"middle"}}/> <span>Remember me?</span>
 
     <p style={{top:16,marginLeft:16,color:"#7AAFD7"}}> Forgot Password? </p>
 

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import "./App.css";
+import { Container, Row, Col } from 'react-grid-system';
+
 import Week1 from "./Components/Week1";
 import Week2 from "./Components/Week2";
 import Week3 from "./Components/Week3";
@@ -14,57 +16,56 @@ import Week9 from "./Components/Week9";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-const StyledNav = styled.ul`
-  margin: 0 auto;
-  justify-content: center;
-  height: 200px;
-  padding: 90px;
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.7);
-  width: 100px;
-  li {
-    list-style: none;
-    margin-right: 2%;
-  }
+
+const StyledSpan =styled.span`
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 17%;
+font-family: sans-serif;
+font-size: large;
+font-weight: 700;
+color:#F8F8FF;
+
 `;
+
+const Linkable =styled.link`
+text-decoration:none;
+`;
+
+
 
 const StyledHeader = styled.h1`
   text-align: center;
+  margin-bottom:5%;
 `;
 
 const Home = () => (
-  <nav>
-    <StyledHeader> Welcome to Interaction Design!</StyledHeader>
-    <StyledNav>
-      <li>
-        <Link to="/Week1"> Week 1</Link>
-      </li>
+  <div>
+      <StyledHeader> Welcome to Interaction Design!</StyledHeader>
 
-      <li>
-        <Link to="/week2"> Week 2</Link>
-      </li>
-      <li>
-        <Link to="/week3"> Week 3</Link>
-      </li>
-      <li>
-        <Link to="/week4"> Week 4</Link>
-      </li>
-      <li>
-        <Link to="/week5"> Week 5</Link>
-      </li>
-      <li>
-        <Link to="/week6"> Week 6</Link>
-      </li>
-      <li>
-        <Link to="/week7"> Week 7</Link>
-      </li>
-      <li>
-        <Link to="/week8"> Week 8</Link>
-      </li>
-      <li>
-        <Link to="/week9"> Week 9</Link>
-      </li>
-    </StyledNav>
-  </nav>
+  <Container fluid>
+  <Row justify="center"style={{ height: '100px' }} debug> 
+   <Col style={{backgroundColor:"#006466"}} md={2} debug><StyledSpan style={{color:"#808080"}}>Week 1</StyledSpan></Col>
+   <Col style={{backgroundColor:"#065a60"}} md={2} offset={{ md: 1}}debug><StyledSpan style={{color:"#808080"}}>Week 2</StyledSpan></Col>
+   <Col style={{backgroundColor:"#0b525b"}} md={2} offset={{ md: 1}} debug><Link to="/Week3" style={{ textDecoration: 'none' }}><StyledSpan>Week 3</StyledSpan></Link></Col>
+  </Row>
+  <br/>
+  <Row justify="center" style={{ height: '100px' }} debug>   
+  <Col style={{backgroundColor:"#144552"}} md={2} debug><StyledSpan style={{color:"#808080"}}>Week 4</StyledSpan></Col>
+  <Col style={{backgroundColor:"#1b3a4b "}} md={2} offset={{ md: 1}} debug><StyledSpan style={{color:"#808080"}}>Week 5</StyledSpan></Col>
+  <Col style={{backgroundColor:"#212f45"}} md={2} offset={{ md: 1}} debug> <Link to="/Week6" style={{ textDecoration: 'none' }}><StyledSpan>Week 6</StyledSpan></Link></Col>
+  </Row>
+  <br/>
+  <Row justify="center" style={{ height: '100px' }} debug>   
+   <Col style={{backgroundColor:"#272640"}} md={2} debug><Link to="/Week7" style={{ textDecoration: 'none' }}><StyledSpan>Week 7</StyledSpan></Link></Col>
+   <Col style={{backgroundColor:"#312244"}} md={2} offset={{ md: 1}} debug><Link to="/Week8" style={{ textDecoration: 'none' }}><StyledSpan>Week 8</StyledSpan></Link></Col>
+   <Col style={{backgroundColor:"#3e1f47"}} md={2} offset={{ md: 1}} debug><Link to="/Week9" style={{ textDecoration: 'none' }}><StyledSpan>Week 9</StyledSpan></Link></Col>
+  <br/>
+  </Row>
+</Container>
+</div>
+  
 );
 
 function App() {

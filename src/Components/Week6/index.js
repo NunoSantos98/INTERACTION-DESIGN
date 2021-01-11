@@ -1,217 +1,154 @@
-import React, {useState} from "react";
-import styled, {keyframes} from "styled-components";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import {useForm} from "react-hook-form";
-import side from "../../Assets/sideimage.png"
-import Icon from "../../Assets/DeathStar.png";
+import React from "react";
+import ReactTimeout from 'react-timeout';
+import styled from "styled-components";
+import { withSwalInstance } from 'sweetalert2-react';
+import swal from 'sweetalert2';
+import BackMenu from "../../Assets/home.svg";
 
-import {Button} from "../Week3";
-import {buildQueries} from "@testing-library/react";
+import pass from "../../Assets/pass.jpg"
+ 
+const SweetAlert = withSwalInstance(swal);
 
-const SideImage =styled.img`
-width:50%;
-margin:0 auto;
-display: block;
-
-`;
-
-const StyledWrapper = styled.div `
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  
-`;
-
-const Styledblocks =styled.div `
-
-width: 50%;
-font-size: 30px;
-object-fit: cover;
-margin-left: 1rem;
-margin-top: 1rem;
-
-`;
-
-const StyledButton = styled.button `
-  color: #fff;
-  background-color: ${
-    (props) => props.color
-};
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  border: 0;
-  border-radius: 0.25rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0.3);
-  cursor: pointer;
-  margin: 2%;
-  position: absolute;
-
-  &:hover {
-    transition: 0.5s all ease-out;
-  }
-`;
-const StyledItems = styled.h4 `
-margin-left:1rem;
-
-
-`;
-const StyledInput = styled.input `
-background: #ffffff;
-margin-Left:16px;
-border: 1px solid #c7c7c7;
-height:58px;
-width:328px;
-top:16px;
-font-size:16px;
-font:Roboto;
-text-indent: 16px;
-
-font-color: #000000 60%;
-`;
-
-const StyledSelect = styled.select `
-background: #ffffff;
-margin-Left:16px;
-border: 1px solid #c7c7c7;
-height:58px;
-width:100px;
-top:16px;
-font-size:16px;
-font:Roboto;
-font-color: #000000 60%;
-
-  &:hover {
-    transition: 0.5s all ease-out;
-  }
-`;
-
-const StyledMenu = styled.div `
-  animation: 0.5s ${
-    keyframes({
-        from: {
-            opacity: 0
-        },
-        to: {
-            opacity: 1
-        }
-    })
+function refreshPage() {
+  window.location.reload(false);
 }
-    linear;
-  padding:0;
-  margin-top: 21rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
-  & li {
-    &:hover {
-      background: grey;
-    }
-    cursor: pointer;
 
-    text-align: center;
-    width: 80%;
-    height: 10px;
-    list-style: none;
-    margin-top: 1rem;
-    padding: 30px;
-  }
+const StyledDivRow = styled.div`
+flex:50%;
+padding:10px;
+height:300px;
+
 `;
 
+const StyledWrapper = styled.div`
+width: 100vw;
+height: 70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+`;
+
+
+const StyledButton =styled.button`
+    padding: 0.5em 4rem;
+    font-size: 1.5rem;
+    background-color: grey;
+    color: white;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem rgba(0,0,0.3);
+    cursor: pointer;
+    margin: 3%;
+    margin-left: 27%;
+}
+
+`;
 
 const options = [
-    {
-        label: "1",
-        value: "1"
-    }, {
-        label: "2",
-        value: "2"
-    }, {
-        label: "3",
-        value: "3"
-    }, {
-        label: "4",
-        value: "4"
-    },
-    {
-        label: "5",
-        value: "5"
-    },
-    {
-        label: "6",
-        value: "6"
-    },
-    {
-        label: "7",
-        value: "7"
-    },
-    {
-        label: "8",
-        value: "8"
-    },{
-        label: "9",
-        value: "9"
-    },
+  {
+    label: "--",
+    value: 0,
+  },
+  {
+    label: "1",
+    value: 1,
+  },
+  {
+    label: "2",
+    value: 2,
+  },
+  {
+    label: "3",
+    value: 3,
+  },
+  {
+    label: "4",
+    value: 4,
+  },
+  {
+    label: "5",
+    value: 5,
+  },
 ];
+function sayHello() {
+  alert("Thank you for your purchase, your card has been updated.The page will refresh");
+}
+
+function ss(){
+  setTimeout(5000);
+  window.location.reload();
+}
+
+const styles = styled.image`
+
+width: 135px;
+height: 135px;
+
+`;
 
 
 class Week6 extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            fruit: "0"
-        };
+  constructor(props) {
+    super(props);
+    this.state = {
+      default: "",
+    };
 
-        this.handleChange = this.handleChange.bind(this);
-    }
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-    handleChange(e) {
-        console.log("Fruit Selected!!");
-        this.setState({fruit: e.target.value});
-    }
+  handleChange(e) {
+    console.log("Fruit Selected!!");
+    this.setState({ default: e.target.value });
+  }
+ 
+  
+  render() {
+    return (
+      <div>
+      <a href="/interaction-design/" style={{textDecoration:"none",color:"black"}}>
+                <img src={BackMenu} className="go-back" alt="go back" style={{width:"2%",margin:"1%"}}/>
+            </a>
+      <StyledWrapper>
 
-    render() {
-        return (
-            <StyledWrapper>
-                <Styledblocks>
-                <StyledItems >x{this.state.fruit}</StyledItems>
+<StyledDivRow>
 
-                <form>
-                    <StyledInput type="text" name="firstname" placeholder="First Name"/>
-                    <StyledInput type="text" name="lastname" placeholder="Last Name"/>
-                    <p/>
-                    <StyledInput type="text" name="email" placeholder="Email"/>
+<img src={pass} style={{height: 400,width: 500,color: "white",float:"right"}}/>
 
-                </form>
-                <StyledSelect value={
-                        this.state.fruit
-                    }
-                    onChange={
-                        this.handleChange
-                }>
-                    {
-                    options.map((option) => (
-                        <option value={
-                            option.value
-                        }>
-                            {
-                            option.label
-                        }
-                            {
-                            option.img
-                        }</option>
-                    ))
-                } </StyledSelect>
+</StyledDivRow>
 
-                
-                </Styledblocks>
+<StyledDivRow >
 
-            </StyledWrapper>
 
-        );
-    }
+      <h1>Imperial Monthly Pass</h1>
+      <p/>
+      <p style={{width:"50%",textAlign: "justify"}}>The Imperial Monthly Pass offers total access to the death star, including Darth Vader´s room <b>(dangerous)</b> and a free meal every day.</p>
+      <p>(insurance not included)</p>
+        <div className="select-container" style={{fontSize:"xx-large", marginLeft:"27%"}}>
+            Quantity: 
+            <select value={this.state.default} onChange={this.handleChange} style={{width: "8%",fontSize: "x-large"}}>
+            {options.map((option) => (
+              <option value={option.value}>{option.label}</option>
+            ))}
+          </select>
+          </div> 
+    
+      <StyledButton  onClick={() => {
+          sayHello();
+          ss();
+        }}>
+        Buy
+    </StyledButton>
+    </StyledDivRow>
+ 
+      </StyledWrapper>
+      </div>
+
+    );
+
+  }
 }
+
 export default Week6;

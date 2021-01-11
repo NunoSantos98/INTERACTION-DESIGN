@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faPlus } from "@fortawesome/free-solid-svg-icons";
+import BackMenu from "../../Assets/home.svg";
+
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -93,15 +95,18 @@ export const BorderButton = (props) => {
   return <StyledBorderButton color={color}>{children}</StyledBorderButton>;
 };
 
-const Home = () => (
-  <Switch>
-    <Route exact path="/" component={Home} />
-  </Switch>
-);
+
 
 const Week3 = () => {
   return (
+    <div>
+      <a href="/interaction-design/" style={{textDecoration:"none",color:"black"}}>
+                <img src={BackMenu} className="go-back" alt="go back" style={{width:"2%",margin:"1%"}}/>
+            </a>
     <StyledWrapper>
+       
+
+
       <Breaker>
         <Button color="#337ab7">Button 1</Button>
         <BorderButton color="#337ab7">Button 1</BorderButton>
@@ -138,6 +143,7 @@ const Week3 = () => {
         </CheckedBorderButton>
       </Breaker>
     </StyledWrapper>
+    </div>
   );
 };
 

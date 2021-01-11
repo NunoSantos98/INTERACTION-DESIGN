@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 
 import day from "../../Assets/day.jpg";
 import night from "../../Assets/night.jpg";
+import BackMenu from "../../Assets/home-color.svg";
 
 const time = '0.25s';
 
@@ -95,7 +96,13 @@ const Week9 = () => {
     const handleActive = () => setShowBackground(true);
 
     
-    return (<StyledWrapper showBackground={showBackground}>
+    return (
+    
+    
+    <StyledWrapper showBackground={showBackground}>
+        <a href="/interaction-design/" style={{textDecoration:"none",color:"black"}}>
+                <img src={BackMenu} className="go-back" alt="go back" style={{width:"2%",margin:"1%"}}/>
+            </a>
         <Toggle onNotActive={handleNotActive} onActive={handleActive} />
 
 
