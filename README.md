@@ -58,7 +58,7 @@ This kind of support and documentation can be a problem solve form many modern d
 The first Button Design uses the Contained buttons guidelines, a type that offers a high emphasis, distinguished by elevation and fill.
 
 The second button is based on the Outlined button (known sometimes as "Ghost button") are a step up in difficulty and focus from a text button. Normally this kind of buttons is used as an action button not primary. 
-To the good use, it is suggest using a fill when hover to give the select feeling to the user.
+To the good use, it is suggest using a fill when hover to give the feeling of selection to the user.
 
 The Third Button Design was created using Icon buttons Guidelines. They are commonly found in app bars and toolbars.
 
